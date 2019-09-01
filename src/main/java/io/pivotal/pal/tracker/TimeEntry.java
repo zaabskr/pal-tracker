@@ -29,6 +29,13 @@ public class TimeEntry {
         this.hours = hours;
     }
 
+    public TimeEntry(Integer projectId, Integer userId, LocalDate date, int hours) {
+        this.projectId = projectId.longValue();
+        this.userId = userId.longValue();
+        this.date = date;
+        this.hours = hours;
+    }
+
     public Long getId() {
         return id;
     }
